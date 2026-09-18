@@ -1,0 +1,173 @@
+{
+  "dataset_name": "tobiasbueck/multilingual-customer-support-tickets",
+  "dataset_version": "v8",
+  "total_dataset_rows": 4000,
+  "test_size_ratio": 0.2,
+  "random_state": 42,
+  "category_model": {
+    "model_name": "CategoryClassifier",
+    "test_samples": 800,
+    "labels": [
+      "Billing",
+      "Customer Service",
+      "Other",
+      "Product",
+      "Technical"
+    ],
+    "accuracy": 0.615,
+    "macro_precision": 0.5611,
+    "macro_recall": 0.5966,
+    "macro_f1": 0.5711,
+    "weighted_precision": 0.6515,
+    "weighted_recall": 0.615,
+    "weighted_f1": 0.6248,
+    "classification_report": {
+      "Billing": {
+        "precision": 0.7844827586206896,
+        "recall": 0.8504672897196262,
+        "f1-score": 0.8161434977578476,
+        "support": 107.0
+      },
+      "Customer Service": {
+        "precision": 0.3983739837398374,
+        "recall": 0.3602941176470588,
+        "f1-score": 0.3783783783783784,
+        "support": 136.0
+      },
+      "Other": {
+        "precision": 0.40816326530612246,
+        "recall": 0.5263157894736842,
+        "f1-score": 0.45977011494252873,
+        "support": 38.0
+      },
+      "Product": {
+        "precision": 0.391304347826087,
+        "recall": 0.5869565217391305,
+        "f1-score": 0.46956521739130436,
+        "support": 138.0
+      },
+      "Technical": {
+        "precision": 0.8229508196721311,
+        "recall": 0.6587926509186351,
+        "f1-score": 0.7317784256559767,
+        "support": 381.0
+      },
+      "accuracy": 0.615,
+      "macro avg": {
+        "precision": 0.5610550350329735,
+        "recall": 0.5965652738996269,
+        "f1-score": 0.5711271268252072,
+        "support": 800.0
+      },
+      "weighted avg": {
+        "precision": 0.6514662291721828,
+        "recall": 0.615,
+        "f1-score": 0.6248320728278655,
+        "support": 800.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        91,
+        5,
+        2,
+        6,
+        3
+      ],
+      [
+        4,
+        49,
+        12,
+        47,
+        24
+      ],
+      [
+        1,
+        7,
+        20,
+        5,
+        5
+      ],
+      [
+        12,
+        16,
+        7,
+        81,
+        22
+      ],
+      [
+        8,
+        46,
+        8,
+        68,
+        251
+      ]
+    ]
+  },
+  "priority_model": {
+    "model_name": "PriorityClassifier",
+    "test_samples": 800,
+    "labels": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "accuracy": 0.585,
+    "macro_precision": 0.5627,
+    "macro_recall": 0.5749,
+    "macro_f1": 0.5665,
+    "weighted_precision": 0.5925,
+    "weighted_recall": 0.585,
+    "weighted_f1": 0.5872,
+    "classification_report": {
+      "High": {
+        "precision": 0.6947040498442367,
+        "recall": 0.6757575757575758,
+        "f1-score": 0.685099846390169,
+        "support": 330.0
+      },
+      "Medium": {
+        "precision": 0.5631399317406144,
+        "recall": 0.515625,
+        "f1-score": 0.5383360522022839,
+        "support": 320.0
+      },
+      "Low": {
+        "precision": 0.43010752688172044,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.47619047619047616,
+        "support": 150.0
+      },
+      "accuracy": 0.585,
+      "macro avg": {
+        "precision": 0.5626505028221905,
+        "recall": 0.574905303030303,
+        "f1-score": 0.566542124927643,
+        "support": 800.0
+      },
+      "weighted avg": {
+        "precision": 0.592466554547316,
+        "recall": 0.585,
+        "f1-score": 0.5872238218025726,
+        "support": 800.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        223,
+        81,
+        26
+      ],
+      [
+        75,
+        165,
+        80
+      ],
+      [
+        23,
+        47,
+        80
+      ]
+    ]
+  }
+}
