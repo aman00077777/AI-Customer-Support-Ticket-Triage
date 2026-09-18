@@ -1,12 +1,14 @@
 # AI Customer Support Ticket Triage
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman00077777-ai-customer-support-ticket-triage-app-ehqxiv.streamlit.app/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.41%2B-red.svg)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg)](https://scikit-learn.org/)
 [![Status: Production-Ready](https://img.shields.io/badge/Status-Production--Ready-brightgreen.svg)]()
 [![No API Keys](https://img.shields.io/badge/API%20Keys-Zero%20(100%25%20Local)-lightgrey.svg)]()
 
+> 🌐 **Live Web Application:** [https://aman00077777-ai-customer-support-ticket-triage-app-ehqxiv.streamlit.app/](https://aman00077777-ai-customer-support-ticket-triage-app-ehqxiv.streamlit.app/)
+> 
 > **Automated, intelligent customer support ticket categorization, priority scoring, and queue routing using NLP and Machine Learning with human-in-the-loop safeguards.**
 > 
 > *Developed as part of the YHills AI/ML Internship.*
@@ -246,7 +248,12 @@ python -m src.train
 
 ## Running the Web Application
 
-Launch the Streamlit interactive dashboard:
+### Option A: Live Cloud Deployment
+Access the permanently hosted application on Streamlit Community Cloud:
+👉 **[https://aman00077777-ai-customer-support-ticket-triage-app-ehqxiv.streamlit.app/](https://aman00077777-ai-customer-support-ticket-triage-app-ehqxiv.streamlit.app/)**
+
+### Option B: Local Execution
+Launch the Streamlit interactive dashboard locally:
 ```bash
 streamlit run app.py
 ```
